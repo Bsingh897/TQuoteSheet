@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #d71345;
+}
+
+.section-container {
+    border: 1px solid #d71345;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.description {
+    margin-top: -10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.cost-preview {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.tally {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #d71345;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+.tally h3 {
+    color: #d71345;
+}
+
+.tally p {
+    margin: 5px 0;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.summary p {
+    margin: 0;
+}
+
+.line-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.line-container h3 {
+    margin-top: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .section-container {
+        padding: 15px;
+    }
+
+    .tally {
+        position: static;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .section-container {
+        padding: 10px;
+    }
+
+    .tally {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    select, input {
+        padding: 8px;
+    }
+}
+
+

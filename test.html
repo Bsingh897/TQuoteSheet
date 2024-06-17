@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Mobile Quote Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Plan selection container -->
+        <div class="section-container">
+            <div class="section">
+                <h2>How Many Lines?</h2>
+                <label for="numLines">Number of lines:</label>
+                <select id="numLines">
+                    <option value="">Select number of lines</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <h2>Choose Your Plan</h2>
+                <label for="planType">Plan type:</label>
+                <select id="planType">
+                    <option value="">Select plan type</option>
+                    <option value="Essential">Essential</option>
+                    <option value="Go5GPlus">Go5G Plus</option>
+                    <option value="Go5G">Go5G</option>
+                    <option value="Go5GNextMilitary">Go5G Next Military</option>
+                    <option value="Go5GPlusMilitary">Go5G Plus Military</option>
+                    <option value="Go5GMilitary">Go5G Military</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <h2>P360 Insurance</h2>
+                <label for="p360Lines">Number of lines with P360:</label>
+                <select id="p360Lines">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <p id="summary">How Many Lines: <span id="summaryLines">0</span> | Plan Cost: $<span id="summaryPlanCost">0.00</span> | P360 Cost: $<span id="summaryP360Cost">0.00</span></p>
+            </div>
+        </div>
+
+        <!-- Phone selection container -->
+        <div id="phonesSection" class="section-container">
+            <h2 class="bold">Pick a Phone</h2>
+            <div class="section">
+                <p id="phoneSummary">Total Monthly Cost: $<span id="totalMonthlyPhoneCost">0.00</span> | Total Full Price: $<span id="totalFullPhoneCost">0.00</span> | Total Down Payment: $<span id="totalDownPaymentPhoneCost">0.00</span></p>
+            </div>
+        </div>
+
+        <!-- Trade-in container -->
+        <div id="promotionsSection" class="section-container">
+            <h2 class="bold">Trade-In</h2>
+        </div>
+
+        <!-- Port Credit Options -->
+        <div class="section-container">
+            <h2>Port Credit Options</h2>
+            <label for="portCreditLines">$250 Credit when Activated on Go5G Next/Plus:</label>
+            <select id="portCreditLines">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <label for="newLineCreditLines">$150 Port Credit on Go5G Next/Plus:</label>
+            <select id="newLineCreditLines">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <!-- Promotion Summary -->
+        <div class="section-container cost-preview" id="promotionalSummarySection">
+            <h2>PROMOTION SUMMARY</h2>
+            <div id="promotionSummaries"></div>
+            <p id="giftCardSummary"></p>
+        </div>
+    </div>
+
+    <!-- Total Summary (floating right) -->
+    <div id="totalSummarySection" class="tally">
+        <div class="section-container">
+            <h3>PLAN</h3>
+            <p>Base Plan: $<span id="tallyPlanCost">0.00</span></p>
+            <p>P360: $<span id="tallyP360Cost">0.00</span></p>
+        </div>
+        <div class="section-container">
+            <h3>PHONE</h3>
+            <p>Phone Cost: $<span id="tallyPhoneCost">0.00</span></p>
+            <p>Phone Credit: $<span id="tallyPhoneCredit">0.00</span></p>
+        </div>
+        <div class="section-container">
+            <h3>TOTAL</h3>
+            <p>Out the Door Cost: $<span id="tallyOutTheDoorCost">0.00</span></p>
+            <p>Total Monthly Cost: $<span id="tallyTotalCost">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="phoneCosts.js"></script>
+    <script src="tradeInPhones.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
